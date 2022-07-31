@@ -1,0 +1,16 @@
+Zadanie nr 1.
+Jako użytkownik chciałbym mieć możliwość wykonywania podstawowych operacji CRUD dla organizacji. Ponadto każda organizacja powinna być walidowana zgodnie z wymaganiami projektowymi.
+-	Pakiet organizacja, w którym znajdzie się
+//-	Klasa modelowa organizacja (nazwa - id, opis)
+-	RestController
+-	Serwis
+-	Repositorium (baza danych H2 i Spring Data)
+-	Operacja do zaimplementowania
+//-	Dodawanie
+-	Odczyt
+-	Edycja
+-	Usuwanie
+-	Walidacja
+//-	Swagger
+
+//localhost:8080/h2-console
