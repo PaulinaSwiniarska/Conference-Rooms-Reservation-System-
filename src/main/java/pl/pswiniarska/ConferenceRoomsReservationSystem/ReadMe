@@ -1,4 +1,4 @@
-Zadanie nr 1.
+2.0
 Jako użytkownik chciałbym mieć możliwość wykonywania podstawowych operacji CRUD dla organizacji. Ponadto każda organizacja powinna być walidowana zgodnie z wymaganiami projektowymi.
 -	Pakiet organizacja, w którym znajdzie się
 //-	Klasa modelowa organizacja (nazwa - id, opis)
@@ -14,3 +14,43 @@ Jako użytkownik chciałbym mieć możliwość wykonywania podstawowych operacji
 //-	Swagger
 
 //localhost:8080/h2-console
+-Zaimplementuj mechanizm sprawdzania unikalności nazwy organizacji.
+W systemie może istnieć tylko jedna organizacja o danej nazwie.
+W przypadku próby duplikacji rekordów użytkownikowi powinien zostać zwrócony kod błędu 400
+z odpowiednią wiadomością.
+
+-Zaimplementuj mechanizm umożliwiający wyszukiwanie organizacji po konkretnym identyfikatorze.
+
+-Jako użytkownik chciałbym mieć możliwość sortowania organizacji po nazwie zarówno w kolejności
+ rosnącej jak i malejącej
+
+3.0
+Zadanie nr 1.
+Jako użytkownik chciałbym mieć możliwość wykonywania podstawowych operacji CRUD dla sal konferencyjnych.
+Ponadto każda sala konferencyjna powinna być walidowana zgodnie z wymaganiami projektowymi.
+-Encja z polami, id, name, identifier, level, availability, numer_of_seats
+-Serwis - logika biznesowa dla sali konferencyjnej
+-Repository - obsługa bazy danych
+-Controller - obsługa żądań Http: get, post, delete, update
+-Walidacji  - zgodnie z dokumentem pdf
+
+Zaimplementuj mechanizm sprawdzania unikalności nazwy sali konferencyjnej.
+W systemie może istnieć tylko jedna sala konferencyjna o danej nazwie.
+W przypadku próby duplikacji rekordów użytkownikowi powinien zostać zwrócony kod błędu 400 z
+odpowiednią wiadomością.
+
+Uwzględnij modyfikację encji sali konferencyjnej tak by zawierała relację z organizacją.
+Daj użytkownikowi możliwość wprowadzania nowych sal konferencyjnych dla danej organizacji.
+
+Zadanie nr 2.
+Zaimplementuj mechanizm umożliwiający wyszukiwanie sal konferencyjnych po konkretnym identyfikatorze.
+Dodatkowo jako użytkownik chciałbym mieć możliwość wyszukiwania sali po nazwie, dostępności,
+liczby miejsc (bez rozgraniczenia na typ), identyfikatorze, organizacji
+
+Zadanie nr 3.
+Jako użytkownik chciałbym mieć możliwość sortowania sal konferencyjnych po nazwie zarówno
+w kolejności rosnącej jak i malejącej.
+
+Zadanie nr 4.
+Jako klient chciałbym mieć testy jednostkowe i integracyjne sprawdzające poprawność zaimplementowanej
+funkcjonalności
