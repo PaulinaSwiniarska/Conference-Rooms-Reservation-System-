@@ -1,5 +1,6 @@
 2.0
-Jako użytkownik chciałbym mieć możliwość wykonywania podstawowych operacji CRUD dla organizacji. Ponadto każda organizacja powinna być walidowana zgodnie z wymaganiami projektowymi.
+Jako użytkownik chciałbym mieć możliwość wykonywania podstawowych operacji CRUD dla organizacji.
+Ponadto każda organizacja powinna być walidowana zgodnie z wymaganiami projektowymi.
 -	Pakiet organizacja, w którym znajdzie się
 //-	Klasa modelowa organizacja (nazwa - id, opis)
 -	RestController
@@ -23,6 +24,12 @@ z odpowiednią wiadomością.
 
 -Jako użytkownik chciałbym mieć możliwość sortowania organizacji po nazwie zarówno w kolejności
  rosnącej jak i malejącej
+
+-Obecnie zmiana nazwy organizacji jest niemożliwa, żeby rozwiązać ten problem wprowadź:
+Abstrakcyjne id do modelu Organizations (autogenerowane)
+Name powinno być zwykłym polem klasy z dotychczasową walidacją
+Zmodyfikuj metody serwisu tak by odwoływały się do ID
+Dodaj metodę findByName do repository w celu uzyskania istniejącego rozwiązania
 
 3.0
 Zadanie nr 1.
